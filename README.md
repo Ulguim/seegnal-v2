@@ -1,6 +1,5 @@
 <h1 align="center">
-  <img alt="Seegnal" title="Seegnal" src="">
-  <p>Seegnal</p>
+  <img alt="Seegnal" title="Seegnal" src="https://cdn.discordapp.com/attachments/900946220971868193/1053698739270852618/image.png" width="250" alt="SeeGnal Logo">
 </h1>
 
 <h2 align="center">🚧 Projeto em desenvolvimento! 🚧</h2>
