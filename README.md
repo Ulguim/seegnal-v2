@@ -9,6 +9,7 @@
 - [Sobre o projeto](#-Sobre-o-projeto)
 - [Qual é suas funcionalidades](#-Qual-foi-a-nossa-solução)
 - [Ferramentas utilizadas](#-Ferramentas-utilizadas)
+- [Prototipação](#-Prototipação)
 - [Como executar](#-Como-executar)
 - [Licença](#-Licença)
 
@@ -19,15 +20,24 @@
 
 <h2>📚 Sobre o projeto</h2>
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+SeeGnal é um aplicativo voltado para pessoas com deficiencia auditiva. Visando a facilitar a comunicação entre uma pessoa com deficiencia auditiva e um indivíduo da comunidade.
 
 <h2>💡 Qual é suas funcionalidades</h2>
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+O aplicativo conta com as seguintes funcionalidades:
+  * Realizar a tradução de linguagem de sinais para textos
+  * Realizar a tradução de textos em linguagem de sinais
+  * Realizar a tradução de áudios em linguagem de sinais 
 
 <h2>⚒️ Ferramentas utilizadas</h2>
 
--[Lorem Ipsum](https://www.lipsum.com/)
+- React native
+- JavaScript
+- Expo
+
+<h2>📱 Prototipação </h2>
+
+[Figma](https://www.figma.com/file/ErVfpTLLmZyty9clwxuOcm/Untitled?node-id=0%3A1&t=k3rPqphxCYBYl5C2-1)
 
 <h2>🏁 Como executar</h2>
 
