@@ -7,9 +7,9 @@
 <h2>Índice</h2>
 
 - [Sobre o projeto](#-Sobre-o-projeto)
-- [Qual é suas funcionalidades](#-Qual-foi-a-nossa-solução)
+- [Qual é suas funcionalidades](#-Qual-é-suas-funcionalidades)
 - [Ferramentas utilizadas](#-Ferramentas-utilizadas)
-- [Prototipação](#-Prototipação)
+- [Prototipação](#-Prototipacao)
 - [Como executar](#-Como-executar)
 - [Licença](#-Licença)
 
