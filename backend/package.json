@@ -1,0 +1,19 @@
+{
+  "name": "backend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "SeeGnal é um aplicativo voltado para pessoas com deficiencia auditiva. Visando a facilitar a comunicação entre uma pessoa com deficiencia auditiva e um indivíduo da comunidade.",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write \"src/**/*.js\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tensorflow-models/handpose": "^0.0.7",
+    "@tensorflow/tfjs": "^4.1.0",
+    "fingerpose": "^0.1.0"
+  },
+  "devDependencies": {
+  }
+}
