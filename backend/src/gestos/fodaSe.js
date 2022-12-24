@@ -5,7 +5,7 @@ import {
   GestureDescription,
 } from 'fingerpose';
 
-export const fodaSeGesture = new GestureDescription('fodaSe');
+const fodaSeGesture = new GestureDescription('fodaSe');
 
 /**
  * Thumb - Polegar
@@ -22,3 +22,5 @@ for (let finger of [Finger.Ring, Finger.Pinky, Finger.Index, Finger.Thumb]) {
   fodaSeGesture.addCurl(finger, FingerCurl.FullCurl, 1);
   fodaSeGesture.addDirection(finger, FingerDirection.VerticalDown, 0.25);
 }
+
+export default fodaSeGesture;

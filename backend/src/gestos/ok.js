@@ -5,7 +5,7 @@ import {
   GestureDescription,
 } from 'fingerpose';
 
-export const okGesture = new GestureDescription('ok');
+const okGesture = new GestureDescription('ok');
 
 /**
  * Thumb - Polegar
@@ -25,3 +25,5 @@ okGesture.addDirection(Finger.Index, FingerDirection.VerticalDown, 0.75);
 
 okGesture.addCurl(Finger.Thumb, FingerCurl.NoCurl, 1);
 okGesture.addDirection(Finger.Thumb, FingerDirection.HorizontalLeft, 0.25);
+
+export default okGesture;

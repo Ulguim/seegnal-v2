@@ -5,7 +5,7 @@ import {
   GestureDescription,
 } from 'fingerpose';
 
-export const teAmoSeGesture = new GestureDescription('teAmo');
+const teAmoGesture = new GestureDescription('teAmo');
 
 /**
  * Thumb - Polegar
@@ -15,21 +15,23 @@ export const teAmoSeGesture = new GestureDescription('teAmo');
  * Middle - Meio
  */
 
-teAmoSeGesture.addCurl(Finger.Thumb, FingerCurl.NoCurl, 1.0);
-teAmoSeGesture.addDirection(Finger.Thumb, FingerDirection.HorizontalLeft, 0.25);
-teAmoSeGesture.addDirection(
+teAmoGesture.addCurl(Finger.Thumb, FingerCurl.NoCurl, 1.0);
+teAmoGesture.addDirection(Finger.Thumb, FingerDirection.HorizontalLeft, 0.25);
+teAmoGesture.addDirection(
   Finger.Thumb,
   FingerDirection.HorizontalRight,
   0.25,
 );
 
-teAmoSeGesture.addCurl(Finger.Index, FingerCurl.NoCurl, 1.0);
-teAmoSeGesture.addDirection(Finger.Index, FingerDirection.VerticalUp, 0.25);
+teAmoGesture.addCurl(Finger.Index, FingerCurl.NoCurl, 1.0);
+teAmoGesture.addDirection(Finger.Index, FingerDirection.VerticalUp, 0.25);
 
-teAmoSeGesture.addCurl(Finger.Pinky, FingerCurl.NoCurl, 1.0);
-teAmoSeGesture.addDirection(Finger.Pinky, FingerDirection.VerticalUp, 0.25);
+teAmoGesture.addCurl(Finger.Pinky, FingerCurl.NoCurl, 1.0);
+teAmoGesture.addDirection(Finger.Pinky, FingerDirection.VerticalUp, 0.25);
 
 for (let finger of [Finger.Middle, Finger.Ring]) {
-  teAmoSeGesture.addCurl(finger, FingerCurl.FullCurl, 0.75);
-  teAmoSeGesture.addDirection(finger, FingerDirection.VerticalDown, 0.25);
+  teAmoGesture.addCurl(finger, FingerCurl.FullCurl, 0.75);
+  teAmoGesture.addDirection(finger, FingerDirection.VerticalDown, 0.25);
 }
+
+export default teAmoGesture;
