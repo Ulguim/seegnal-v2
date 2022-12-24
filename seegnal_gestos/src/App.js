@@ -1,23 +1,23 @@
-import React, { useRef, useState, useEffect } from "react";
-import * as tf from "@tensorflow/tfjs";
 import * as handpose from "@tensorflow-models/handpose";
+import * as tf from "@tensorflow/tfjs";
+import * as fp from "fingerpose";
+import React, { useEffect, useRef, useState } from "react";
 import Webcam from "react-webcam";
 import "./App.css";
 import { drawHand } from "./utilities";
-import * as fp from "fingerpose";
 
-// Imports de images
-import certo from "./images/certo.png";
-// import fodaSe from "./images/fodaSe.png";
-import Ok from "./images/OK.png";
-import paz from "./images/paz.png";
-// import primeiro from "./images/primeiro.png";
-import teAmo from "./images/teAmo.png";
+import fodaSeGesture from './gestos/fodaSe.js';
+import okGesture from './gestos/ok.js';
+import teAmoGesture from './gestos/teAmo.js';
 
-// Imports de Gestos
-import {fodaSeGesture}  from "./gestos/foda_se.js";
-import {teAmoSeGesture}  from "./gestos/Love-You.js";
-import { okGesture } from "./gestos/ok.js";
+import certoImage from './images/certo.png';
+import fodaSeImage from './images/fodaSe.png';
+import okImage from './images/ok.png';
+import pazImage from './images/paz.png';
+import primeiroImage from './images/primeiro.png';
+import teAmoImage from './images/teAmo.png';
+
+const carregar = tf;
 
 function App() {
   const webcamRef = useRef(null);
@@ -25,7 +25,11 @@ function App() {
 
   ///////// NEW STUFF ADDED STATE HOOK
   const [emoji, setEmoji] = useState(null);
-  const images = { thumbs_up: certo, victory: paz, Love_You: teAmo, OK:Ok };
+  const images = {
+    thumbs_up: certoImage, victory: pazImage,
+    teAmo: teAmoImage, ok:okImage,
+    fodaSe:fodaSeImage, primeiro:primeiroImage
+  };
   ///////// NEW STUFF ADDED STATE HOOK
 
   const runHandpose = async () => {
@@ -65,10 +69,10 @@ function App() {
 
       if (hand.length > 0) {
         const GE = new fp.GestureEstimator([
-          fp.Gestures.VictoryGesture,
+          // fp.Gestures.VictoryGesture,
           fp.Gestures.ThumbsUpGesture,
           fodaSeGesture,
-          teAmoSeGesture,
+          teAmoGesture,
           okGesture,
         ]);
         const gesture = await GE.estimate(hand[0].landmarks, 4);
